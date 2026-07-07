@@ -1,0 +1,922 @@
+{
+  "generated_at": "2026-07-07 14:32 UTC",
+  "discovered": [
+    {
+      "full_name": "Vincentqyw/cv-arxiv-daily",
+      "html_url": "https://github.com/Vincentqyw/cv-arxiv-daily",
+      "description": "🎓Automatically Update CV Papers Daily using Github Actions",
+      "stargazers_count": 1483,
+      "language": "Python",
+      "pushed_at": "2026-07-06T12:07:30Z",
+      "forks_count": 561,
+      "topics": [
+        "3d-reconstruction",
+        "arxiv",
+        "cv",
+        "deep-learning",
+        "image-matching",
+        "lidar",
+        "localization",
+        "mapping",
+        "nerf",
+        "paper",
+        "paperwithcode",
+        "robotics",
+        "sfm",
+        "slam",
+        "structure-from-motion"
+      ]
+    },
+    {
+      "full_name": "liliu-avril/Awesome-Segment-Anything",
+      "html_url": "https://github.com/liliu-avril/Awesome-Segment-Anything",
+      "description": "This repository is for the first comprehensive survey on Meta AI's Segment Anything Model (SAM).",
+      "stargazers_count": 1214,
+      "language": null,
+      "pushed_at": "2026-07-07T05:45:55Z",
+      "forks_count": 77,
+      "topics": []
+    },
+    {
+      "full_name": "EndoluminalSurgicalVision-IMR/ATM-22-Related-Work",
+      "html_url": "https://github.com/EndoluminalSurgicalVision-IMR/ATM-22-Related-Work",
+      "description": "[MedIA 2023/MICCAI 2022 Grand Challenge]: Airway Tree Modeling (ATM'22) Related Work Collections, also includes the state-of-the-art works on pulmonary airway segmentation and related works.",
+      "stargazers_count": 171,
+      "language": "Python",
+      "pushed_at": "2026-01-15T07:24:18Z",
+      "forks_count": 25,
+      "topics": [
+        "deep-learning",
+        "miccai-grand-challenge",
+        "pulmonary-airway-segmentation"
+      ]
+    },
+    {
+      "full_name": "DCBIA-OrthoLab/SlicerAutomatedDentalTools",
+      "html_url": "https://github.com/DCBIA-OrthoLab/SlicerAutomatedDentalTools",
+      "description": "A 3D Slicer extension to use AMASSS, ALI-CBCT and ALI-IOS",
+      "stargazers_count": 170,
+      "language": "Python",
+      "pushed_at": "2026-07-01T19:01:04Z",
+      "forks_count": 36,
+      "topics": [
+        "3d-images",
+        "3d-models",
+        "3d-slicer-extension",
+        "deep-learning",
+        "landmark-localization",
+        "machine-learning",
+        "monai",
+        "orthodontics",
+        "pytorch",
+        "segmentation"
+      ]
+    },
+    {
+      "full_name": "MarvinLer/tcga_segmentation",
+      "html_url": "https://github.com/MarvinLer/tcga_segmentation",
+      "description": "Whole Slide Image segmentation with weakly supervised multiple instance learning on TCGA | MICCAI2020 https://arxiv.org/abs/2004.05024",
+      "stargazers_count": 142,
+      "language": "Python",
+      "pushed_at": "2021-08-05T16:56:48Z",
+      "forks_count": 35,
+      "topics": [
+        "computational-pathology",
+        "data-efficient",
+        "histopathology",
+        "image-segmentation",
+        "medical-imaging",
+        "miccai",
+        "multiple-instance-learning",
+        "pathology",
+        "segmentation",
+        "slide-image-segmentation",
+        "tcga",
+        "tcga-data",
+        "tumor-segmentation",
+        "weakly-supervised-learning",
+        "whole-slide-imaging",
+        "wsi"
+      ]
+    },
+    {
+      "full_name": "itgoyo/awesome-gpt-image2-prompt",
+      "html_url": "https://github.com/itgoyo/awesome-gpt-image2-prompt",
+      "description": "🎨 A curated collection of 612 high-quality GPT-Image-2 prompts with example images | 精选612个GPT-Image-2提示词，含效果图",
+      "stargazers_count": 98,
+      "language": null,
+      "pushed_at": "2026-07-05T08:57:59Z",
+      "forks_count": 11,
+      "topics": []
+    },
+    {
+      "full_name": "K-Dense-AI/scientific-agents",
+      "html_url": "https://github.com/K-Dense-AI/scientific-agents",
+      "description": "Expert-thinking AGENTS.md profiles that teach AI agents to reason like senior scientists and engineers.",
+      "stargazers_count": 94,
+      "language": null,
+      "pushed_at": "2026-07-05T02:36:54Z",
+      "forks_count": 6,
+      "topics": [
+        "agentic-ai",
+        "agents-md",
+        "ai-agents",
+        "llm",
+        "prompt-engineering",
+        "science"
+      ]
+    },
+    {
+      "full_name": "tradecatlabs/human_infra",
+      "html_url": "https://github.com/tradecatlabs/human_infra",
+      "description": "Human Infra: docs-as-code knowledge base for human runtime infrastructure, longevity evidence, future-waiting paths, disembodied CNS concepts, and memory-editing boundaries.",
+      "stargazers_count": 85,
+      "language": "Python",
+      "pushed_at": "2026-07-04T21:54:47Z",
+      "forks_count": 8,
+      "topics": [
+        "bioethics",
+        "brain-computer-interface",
+        "cognitive-enhancement",
+        "docs-as-code",
+        "energy-efficiency",
+        "future-studies",
+        "future-waiting",
+        "human-infra",
+        "knowledge-base",
+        "life-extension",
+        "longevity",
+        "longevity-evidence",
+        "memory-editing",
+        "philosophy",
+        "possibilism",
+        "research-notes",
+        "scarcity-elimination",
+        "transhumanism"
+      ]
+    },
+    {
+      "full_name": "LiquidFun/Airway",
+      "html_url": "https://github.com/LiquidFun/Airway",
+      "description": "Automatic classification of tertiary bronchi based on bronchus masks using a rule-based approach.",
+      "stargazers_count": 46,
+      "language": "Python",
+      "pushed_at": "2022-11-09T00:56:35Z",
+      "forks_count": 19,
+      "topics": [
+        "airway",
+        "bronchus",
+        "bronchus-classification",
+        "lung",
+        "lung-segments",
+        "sublobar-anatomy"
+      ]
+    },
+    {
+      "full_name": "ambicuity/Awesome-MICCAI-2026",
+      "html_url": "https://github.com/ambicuity/Awesome-MICCAI-2026",
+      "description": "This repository automatically discovers and organizes MICCAI 2026 papers from arXiv that have publicly available code implementations. The list is updated daily by a bot that searches for new papers and categorizes them by research area.",
+      "stargazers_count": 34,
+      "language": "Python",
+      "pushed_at": "2026-07-07T10:58:00Z",
+      "forks_count": 3,
+      "topics": []
+    },
+    {
+      "full_name": "jobright-ai/2026-Engineering-New-Grad",
+      "html_url": "https://github.com/jobright-ai/2026-Engineering-New-Grad",
+      "description": "Collection of 2026 New Grad Jobs in Engineering and Development!",
+      "stargazers_count": 20,
+      "language": null,
+      "pushed_at": "2026-07-07T13:54:37Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "TimJaspers0801/ATLAS",
+      "html_url": "https://github.com/TimJaspers0801/ATLAS",
+      "description": "[MICCAI 2026] - Official repo for the paper: \"Surgical Anatomy Recognition with Context Learning using Foundation Representations\"",
+      "stargazers_count": 11,
+      "language": "Python",
+      "pushed_at": "2026-06-23T11:41:57Z",
+      "forks_count": 1,
+      "topics": []
+    },
+    {
+      "full_name": "Project-MONAI/physiotwin4d",
+      "html_url": "https://github.com/Project-MONAI/physiotwin4d",
+      "description": "Generate anatomic models in Omniverse with physiological motion derived from medical images.",
+      "stargazers_count": 9,
+      "language": "Python",
+      "pushed_at": "2026-07-07T08:09:28Z",
+      "forks_count": 2,
+      "topics": []
+    },
+    {
+      "full_name": "edantonio505/miniclosedai",
+      "html_url": "https://github.com/edantonio505/miniclosedai",
+      "description": "Be your own OpenAI. A local LLM playground where every saved chat is a callable /v1/chat/completions endpoint. No keys, no cloud, no cost.",
+      "stargazers_count": 9,
+      "language": "Python",
+      "pushed_at": "2026-07-07T02:09:44Z",
+      "forks_count": 2,
+      "topics": []
+    },
+    {
+      "full_name": "andywmm9-pixel/xplane-g1000-nxi",
+      "html_url": "https://github.com/andywmm9-pixel/xplane-g1000-nxi",
+      "description": "A high-performance G1000 NXi glass cockpit (PFD/MFD) for X-Plane: one C++ avionics engine with a native XPLM plugin shell and a standalone desktop shell.",
+      "stargazers_count": 9,
+      "language": "C++",
+      "pushed_at": "2026-07-07T01:11:51Z",
+      "forks_count": 3,
+      "topics": []
+    },
+    {
+      "full_name": "Seunghee-Koh/PSGMMpp",
+      "html_url": "https://github.com/Seunghee-Koh/PSGMMpp",
+      "description": "The official implementation of \"PSGMM++: Pulmonary Segment Segmentation with Anatomical Insights\".",
+      "stargazers_count": 9,
+      "language": "Python",
+      "pushed_at": "2026-06-30T06:27:08Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "AIML-SIG/awesome-ai-ml-pharmacometrics",
+      "html_url": "https://github.com/AIML-SIG/awesome-ai-ml-pharmacometrics",
+      "description": "",
+      "stargazers_count": 8,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-07-05T10:03:21Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "Jin1Xu/Med-Multimodal-Paper-List",
+      "html_url": "https://github.com/Jin1Xu/Med-Multimodal-Paper-List",
+      "description": "A curated collection of recent (2024–2025) Medical Multimodal papers from top ML and CV conferences.",
+      "stargazers_count": 7,
+      "language": "Python",
+      "pushed_at": "2025-12-07T16:48:29Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "xKev1n/xU-NetFullSharp",
+      "html_url": "https://github.com/xKev1n/xU-NetFullSharp",
+      "description": "Official repository of the paper xU-NetFullSharp: The Novel Deep Learning Architecture for Chest X-Ray Bone Shadow Suppression",
+      "stargazers_count": 6,
+      "language": "Python",
+      "pushed_at": "2024-11-08T20:01:38Z",
+      "forks_count": 4,
+      "topics": [
+        "bone-suppression",
+        "deep-learning",
+        "denoising",
+        "image-processing",
+        "keras-tensorflow",
+        "neural-network",
+        "u-net"
+      ]
+    },
+    {
+      "full_name": "Hanx-Zhang/Lymph-Node-Mapping",
+      "html_url": "https://github.com/Hanx-Zhang/Lymph-Node-Mapping",
+      "description": "Transfer Mapping for Clinically Relevant Lymph Nodes in The Mediastinal Area of CT data",
+      "stargazers_count": 6,
+      "language": "Python",
+      "pushed_at": "2023-12-15T14:53:26Z",
+      "forks_count": 3,
+      "topics": []
+    },
+    {
+      "full_name": "nichula01/Respgeomlib",
+      "html_url": "https://github.com/nichula01/Respgeomlib",
+      "description": "",
+      "stargazers_count": 4,
+      "language": "Python",
+      "pushed_at": "2026-07-05T12:08:34Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "YuzeHao2023/daily-arxiv-ai4geo",
+      "html_url": "https://github.com/YuzeHao2023/daily-arxiv-ai4geo",
+      "description": "🎓Automatically Update AI4Geo Papers Daily using Github Actions",
+      "stargazers_count": 3,
+      "language": "Python",
+      "pushed_at": "2026-07-06T11:56:10Z",
+      "forks_count": 0,
+      "topics": [
+        "ai4geo"
+      ]
+    },
+    {
+      "full_name": "Pavel-Kravchenko/Bioinformatics",
+      "html_url": "https://github.com/Pavel-Kravchenko/Bioinformatics",
+      "description": "208 bioinformatics skills for Claude Code — NGS, single-cell, metagenomics, structural biology, algorithms, AI for science",
+      "stargazers_count": 3,
+      "language": "HTML",
+      "pushed_at": "2026-07-03T20:15:06Z",
+      "forks_count": 0,
+      "topics": [
+        "agent-skills",
+        "bioinformatics",
+        "claude-code-skill",
+        "claude-skill"
+      ]
+    },
+    {
+      "full_name": "josephmoyer/Hangman",
+      "html_url": "https://github.com/josephmoyer/Hangman",
+      "description": "A hangman game using the 6of12 word list, found at http://wordlist.sourceforge.net/, and included in the public domain by it's creator.",
+      "stargazers_count": 3,
+      "language": "C++",
+      "pushed_at": "2014-04-26T19:13:34Z",
+      "forks_count": 1,
+      "topics": []
+    },
+    {
+      "full_name": "jobright-ai/2026-Support-New-Grad",
+      "html_url": "https://github.com/jobright-ai/2026-Support-New-Grad",
+      "description": "Collection of 2026 New Grad Jobs in Customer Service and Support!",
+      "stargazers_count": 2,
+      "language": null,
+      "pushed_at": "2026-07-07T13:54:33Z",
+      "forks_count": 1,
+      "topics": []
+    },
+    {
+      "full_name": "rwellinger/xp_welly_llm_atc",
+      "html_url": "https://github.com/rwellinger/xp_welly_llm_atc",
+      "description": "Talk to ATC using your microphone via push-to-talk. The plugin transcribes your speech locally with whisper.cpp, interprets your intent through a rule-based ATC state machine (with low-confidence fallback to a local Llama 3.2 3B classifier), and plays back ATC responses.",
+      "stargazers_count": 2,
+      "language": "C++",
+      "pushed_at": "2026-07-06T20:21:06Z",
+      "forks_count": 3,
+      "topics": [
+        "arm64",
+        "atc",
+        "macros",
+        "plugin",
+        "vfr",
+        "x-plane-12",
+        "x-plane12"
+      ]
+    },
+    {
+      "full_name": "labode/genana_py",
+      "html_url": "https://github.com/labode/genana_py",
+      "description": "",
+      "stargazers_count": 2,
+      "language": "Python",
+      "pushed_at": "2026-07-06T13:47:17Z",
+      "forks_count": 1,
+      "topics": []
+    },
+    {
+      "full_name": "gholste/Mid-SURE-2019",
+      "html_url": "https://github.com/gholste/Mid-SURE-2019",
+      "description": "Repo for Mid-SURE 2019 poster \"Automatic Segmentation of Pediatric Chest Radiographs with Deep Learning.\"",
+      "stargazers_count": 2,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2020-12-02T22:02:46Z",
+      "forks_count": 1,
+      "topics": [
+        "deep-learning",
+        "medical-image-analysis",
+        "segmentation"
+      ]
+    },
+    {
+      "full_name": "lucifer0096/data-portfolio",
+      "html_url": "https://github.com/lucifer0096/data-portfolio",
+      "description": "Data analyst portfolio  - Excel, PowerBI, SQL, R, Python projects",
+      "stargazers_count": 1,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-07-06T19:28:54Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "7991lahiriarun/Flight-Fare-Prediction",
+      "html_url": "https://github.com/7991lahiriarun/Flight-Fare-Prediction",
+      "description": "",
+      "stargazers_count": 1,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-07-03T12:42:40Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "batmanlab/MedSynV2",
+      "html_url": "https://github.com/batmanlab/MedSynV2",
+      "description": "MedSynV2: Flexible Control of 3D CT Generation via Text and Semantically-Defined Segmentation Prompts",
+      "stargazers_count": 1,
+      "language": "Python",
+      "pushed_at": "2026-07-02T18:06:47Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "hhg7/stats",
+      "html_url": "https://github.com/hhg7/stats",
+      "description": "Basic statistic functions in Perl",
+      "stargazers_count": 1,
+      "language": "HTML",
+      "pushed_at": "2026-07-07T12:35:23Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "snehangshu2002/snehangshu2002.github.io",
+      "html_url": "https://github.com/snehangshu2002/snehangshu2002.github.io",
+      "description": "",
+      "stargazers_count": 1,
+      "language": "HTML",
+      "pushed_at": "2026-07-03T16:59:46Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "helena-lena/SAOP",
+      "html_url": "https://github.com/helena-lena/SAOP",
+      "description": "Official repository for Surgical Agent Orchestration Platform (SAOP)",
+      "stargazers_count": 1,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2025-12-19T02:16:12Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "GDIAMEL/KAGGLE_CANCER_ANALYSIS",
+      "html_url": "https://github.com/GDIAMEL/KAGGLE_CANCER_ANALYSIS",
+      "description": "CANCER_ANALYSIS_BASED_ON_GENDER",
+      "stargazers_count": 1,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2025-05-02T08:14:38Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "lhaof/ICM",
+      "html_url": "https://github.com/lhaof/ICM",
+      "description": "Intensity Confusion Matters",
+      "stargazers_count": 1,
+      "language": null,
+      "pushed_at": "2024-09-20T09:22:34Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "wooCuler/Spatial-TME-Toolkit",
+      "html_url": "https://github.com/wooCuler/Spatial-TME-Toolkit",
+      "description": "공개 Xenium/Visium 데이터 기반 Niche·Neighborhood 분석 재현",
+      "stargazers_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-07-07T09:54:09Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "lyb020513/arxiv_papre_push",
+      "html_url": "https://github.com/lyb020513/arxiv_papre_push",
+      "description": "Select the five best papers in the relevant field from arXiv and push them to Feishu.",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-07T04:08:34Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "Ruphobia/Autoclank9001",
+      "html_url": "https://github.com/Ruphobia/Autoclank9001",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "C++",
+      "pushed_at": "2026-07-06T22:45:16Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "JakeKitzmann/PCCTAirwaySegmentation",
+      "html_url": "https://github.com/JakeKitzmann/PCCTAirwaySegmentation",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-07-06T19:27:06Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "SollyPolly/lungAirwaySegmentation",
+      "html_url": "https://github.com/SollyPolly/lungAirwaySegmentation",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-06T11:39:59Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "AGALYAM2004/Airline_Passenger_Satisfaction_Analysis",
+      "html_url": "https://github.com/AGALYAM2004/Airline_Passenger_Satisfaction_Analysis",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-07-06T09:32:11Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "YongChen-Exact/A2SAM",
+      "html_url": "https://github.com/YongChen-Exact/A2SAM",
+      "description": "This is an official PyTorch implementation for Informativeness-driven active adaptation of SAM: Structural prompts and contrastive parameter selection for medical tubular segmentation",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-06T08:27:18Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "merttdmrr/merttdmrr",
+      "html_url": "https://github.com/merttdmrr/merttdmrr",
+      "description": "",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2026-07-05T19:59:10Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "stisa/allstars",
+      "html_url": "https://github.com/stisa/allstars",
+      "description": "",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2026-07-05T04:06:23Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "Someshr17/British-airways-customer-review-analysis",
+      "html_url": "https://github.com/Someshr17/British-airways-customer-review-analysis",
+      "description": "Interactive Tableau dashboard analyzing British Airways customer reviews and passenger satisfaction",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2026-07-04T11:05:25Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "aCoderChild/AdeSEG",
+      "html_url": "https://github.com/aCoderChild/AdeSEG",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-03T15:50:27Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "shivagundeti2005/shivagundeti2005",
+      "html_url": "https://github.com/shivagundeti2005/shivagundeti2005",
+      "description": "",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2026-07-07T02:52:43Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "VivianChenyc5519/imaging-labelling",
+      "html_url": "https://github.com/VivianChenyc5519/imaging-labelling",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-03T09:44:27Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "MrMike24/MrMike24",
+      "html_url": "https://github.com/MrMike24/MrMike24",
+      "description": "",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2026-07-07T02:06:35Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "flamschou/NewAirRC",
+      "html_url": "https://github.com/flamschou/NewAirRC",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-02T08:14:10Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "zeratulers/ct-annotation-platform",
+      "html_url": "https://github.com/zeratulers/ct-annotation-platform",
+      "description": "CT 数据标注平台 · Multi-user chest-CT contour annotation platform (Node+Express+SQLite / React+Vite, i18n)",
+      "stargazers_count": 0,
+      "language": "TypeScript",
+      "pushed_at": "2026-07-02T03:27:05Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "danieled26/qatar_portfolio",
+      "html_url": "https://github.com/danieled26/qatar_portfolio",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-07-01T15:22:10Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "VedantBagal/VedantBagal",
+      "html_url": "https://github.com/VedantBagal/VedantBagal",
+      "description": "",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2026-07-01T14:02:53Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "spatts14/AirScape_analysis",
+      "html_url": "https://github.com/spatts14/AirScape_analysis",
+      "description": "Analysis after ReCoDe pipeline",
+      "stargazers_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2026-07-01T10:55:16Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "SVSPraveen/ShipForesight",
+      "html_url": "https://github.com/SVSPraveen/ShipForesight",
+      "description": "AI-powered logistics platform that predicts shipment delays before the truck leaves — using a 3-stage ML pipeline (Ensemble Classifier → LightGBM Regressor → Reason Classifier) with async LLM explanations via Groq Qwen 2.5.",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-07T11:21:51Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "SeldingerMed/seldinger-lumen",
+      "html_url": "https://github.com/SeldingerMed/seldinger-lumen",
+      "description": "Layer 0 of the Seldinger embodied-medical-AI stack: a differentiable, GPU-parallel contact & coupling solver for a continuum instrument in a deformable lumen. Built on NVIDIA Newton.",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-07T14:16:13Z",
+      "forks_count": 1,
+      "topics": [
+        "contact-mechanics",
+        "cosserat-rod",
+        "differentiable-physics",
+        "endovascular",
+        "medical-ai",
+        "nvidia-newton",
+        "simulation",
+        "surgical-robotics",
+        "warp"
+      ]
+    },
+    {
+      "full_name": "jokkimikipuki-ops/3d-Claude-Art-Peter",
+      "html_url": "https://github.com/jokkimikipuki-ops/3d-Claude-Art-Peter",
+      "description": "",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2026-07-06T19:36:54Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "ashaheem32/ashaheem32",
+      "html_url": "https://github.com/ashaheem32/ashaheem32",
+      "description": "",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2026-07-06T17:36:54Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "celowiz/second-brain",
+      "html_url": "https://github.com/celowiz/second-brain",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-06T15:36:18Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "beingAnujChaudhary/portfolio-beingAnujChaudhary",
+      "html_url": "https://github.com/beingAnujChaudhary/portfolio-beingAnujChaudhary",
+      "description": "It is my portfolio",
+      "stargazers_count": 0,
+      "language": "HTML",
+      "pushed_at": "2026-07-06T13:02:14Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "joshwilks111-max/clinical-care-partner",
+      "html_url": "https://github.com/joshwilks111-max/clinical-care-partner",
+      "description": "Clinical decision-support care-partner PoC (Heidi take-home): weight-based guideline dosing with a deterministic safety spine",
+      "stargazers_count": 0,
+      "language": "TypeScript",
+      "pushed_at": "2026-07-06T01:23:00Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "clay-good/sophiewell.com",
+      "html_url": "https://github.com/clay-good/sophiewell.com",
+      "description": "Always free healthcare utilities.",
+      "stargazers_count": 0,
+      "language": "JavaScript",
+      "pushed_at": "2026-07-05T14:36:05Z",
+      "forks_count": 0,
+      "topics": [
+        "clinical-decision-support",
+        "clinical-math",
+        "deterministic",
+        "ems-tools",
+        "field-medicine",
+        "hcpcs",
+        "healthcare",
+        "icd-10",
+        "medical-billing",
+        "medical-calculators",
+        "medical-coding",
+        "medication-safety",
+        "nursing-reference",
+        "offline-first",
+        "open-source-healthcare",
+        "patient-tools",
+        "privacy-focused",
+        "pwa",
+        "static-site",
+        "zero-dependencies"
+      ]
+    },
+    {
+      "full_name": "majdikawad-lang/icu-tube-detection",
+      "html_url": "https://github.com/majdikawad-lang/icu-tube-detection",
+      "description": "AI-powered medical system to detect ETT displacement in chest X-rays using Attention U-Net",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-06-15T00:19:25Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "imran980/bronchotrust",
+      "html_url": "https://github.com/imran980/bronchotrust",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-07-07T13:30:37Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "imran980/3DEndoMap",
+      "html_url": "https://github.com/imran980/3DEndoMap",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-05-25T01:41:03Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "ptiyoselias98-hash/GCN-copd-ph-classify",
+      "html_url": "https://github.com/ptiyoselias98-hash/GCN-copd-ph-classify",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-04-26T13:07:18Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "sianliu1/TOP-GPS",
+      "html_url": "https://github.com/sianliu1/TOP-GPS",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-03-16T12:50:25Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "Devanish31/atelectasis_and_lobeairwaySeg",
+      "html_url": "https://github.com/Devanish31/atelectasis_and_lobeairwaySeg",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2026-02-08T20:12:18Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "MorineZ/ExpTopo",
+      "html_url": "https://github.com/MorineZ/ExpTopo",
+      "description": "A pytorch implementation of paper \"**_ExpTopo :Explicit Topological Modeling for Bronchus Segmentation_**\".",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2025-03-28T03:17:06Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "tsangchriss/lung_tumor_segmentation",
+      "html_url": "https://github.com/tsangchriss/lung_tumor_segmentation",
+      "description": "",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2024-08-08T18:27:16Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "niccolo99mandelli/JHistint.jl",
+      "html_url": "https://github.com/niccolo99mandelli/JHistint.jl",
+      "description": "Julia interface for implementing REST APIs available on the CDSA (Cancer Slide Digital Archive) portal for managing histological images available from TCGA. The library includes functions for managing image processing algorithms for cell segmentation, constructing the adjacency matrix, tessellation process and interfacing with J-Space.jl.",
+      "stargazers_count": 0,
+      "language": "Julia",
+      "pushed_at": "2024-04-05T11:54:23Z",
+      "forks_count": 1,
+      "topics": []
+    },
+    {
+      "full_name": "woodytwoshoes/Foreign_Body_Detection_Xray_Deep_Learning",
+      "html_url": "https://github.com/woodytwoshoes/Foreign_Body_Detection_Xray_Deep_Learning",
+      "description": "A deep neural network trained to detect foreign bodies on chest X-rays",
+      "stargazers_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2022-05-23T02:41:45Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "yaboidenver/BME_548_Final_Project",
+      "html_url": "https://github.com/yaboidenver/BME_548_Final_Project",
+      "description": "Final project for BME 548",
+      "stargazers_count": 0,
+      "language": "Jupyter Notebook",
+      "pushed_at": "2022-04-29T16:47:53Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "bathienle/master-thesis-code",
+      "html_url": "https://github.com/bathienle/master-thesis-code",
+      "description": "Code of my master thesis: \"Deep interactive learning for digital pathology\"",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2021-10-15T07:33:48Z",
+      "forks_count": 0,
+      "topics": [
+        "deep-learning",
+        "master-thesis",
+        "neural-network",
+        "python",
+        "pytorch",
+        "segmentation"
+      ]
+    },
+    {
+      "full_name": "Andrew-Chen-Wang/django-merge-table-data",
+      "html_url": "https://github.com/Andrew-Chen-Wang/django-merge-table-data",
+      "description": "Testing filtering on VARCHAR on PostgreSQL for an array of words",
+      "stargazers_count": 0,
+      "language": "Python",
+      "pushed_at": "2021-06-10T19:58:24Z",
+      "forks_count": 0,
+      "topics": []
+    },
+    {
+      "full_name": "Thompson-NO3/OALD",
+      "html_url": "https://github.com/Thompson-NO3/OALD",
+      "description": "",
+      "stargazers_count": 0,
+      "language": null,
+      "pushed_at": "2018-05-17T07:00:33Z",
+      "forks_count": 0,
+      "topics": []
+    }
+  ],
+  "known": []
+}

@@ -1,0 +1,154 @@
+/* Awesome Airway — static site styles. Dark GitHub-flavoured theme,
+   kept in sync with the ATM26 viz tool palette. */
+:root{
+  --bg:#0d1117; --bg2:#010409; --panel:#161b22; --panel2:#1c2330;
+  --border:#30363d; --border2:#21262d;
+  --fg:#e6edf3; --muted:#8b949e; --dim:#6e7681;
+  --accent:#4a90d9; --accent2:#58a6ff; --green:#3fb950; --purple:#bc8cff;
+  --yellow:#d29922; --pink:#f778ba; --red:#f85149;
+  --radius:10px; --shadow:0 8px 24px rgba(1,4,9,.6);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+     "Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;
+     background:var(--bg);color:var(--fg);font-size:15px;line-height:1.6;}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+     background:var(--panel2);padding:1px 6px;border-radius:5px;font-size:.86em;color:#c9d1d9}
+
+/* ---- layout ------------------------------------------------------------- */
+.container{max-width:1180px;margin:0 auto;padding:0 20px}
+header.hero{
+  background:radial-gradient(1200px 400px at 50% -120px,#15325a 0%,transparent 70%),
+             linear-gradient(180deg,#0d1117 0%,#0a0e14 100%);
+  border-bottom:1px solid var(--border);padding:52px 0 40px;text-align:center;position:relative;overflow:hidden}
+.hero h1{font-size:40px;margin:0 0 6px;font-weight:800;letter-spacing:-.5px;
+  background:linear-gradient(90deg,#58a6ff,#bc8cff 60%,#f778ba);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--muted);font-size:16px;max-width:760px;margin:0 auto 20px}
+.hero .badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--border);
+  border-radius:20px;padding:5px 13px;font-size:13px;color:var(--muted)}
+.badge b{color:var(--fg)}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.hero .cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{background:var(--accent);color:#fff;border:1px solid var(--accent);border-radius:8px;
+  padding:9px 18px;font-size:14px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:.15s}
+.btn:hover{background:#3b7ec2;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--fg);border-color:var(--border)}
+.btn.ghost:hover{border-color:var(--accent2);background:var(--panel)}
+
+/* ---- sticky nav --------------------------------------------------------- */
+nav.tabs{position:sticky;top:0;z-index:20;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--border)}
+nav.tabs .container{display:flex;gap:4px;overflow-x:auto;align-items:center}
+nav.tabs button{background:none;border:none;color:var(--muted);padding:14px 16px;font-size:14px;
+  cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;font-weight:500}
+nav.tabs button:hover{color:var(--fg)}
+nav.tabs button.active{color:var(--fg);border-bottom-color:var(--accent)}
+nav.tabs .spacer{flex:1}
+
+/* ---- toolbar ------------------------------------------------------------ */
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:24px 0 8px}
+.toolbar input[type=search]{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--border);
+  border-radius:8px;padding:9px 13px;color:var(--fg);font-size:14px}
+.toolbar input[type=search]:focus{outline:none;border-color:var(--accent)}
+.chip{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:5px 12px;
+  font-size:13px;color:var(--muted);cursor:pointer;user-select:none;white-space:nowrap}
+.chip:hover{border-color:var(--accent2);color:var(--fg)}
+.chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.count{color:var(--dim);font-size:13px;margin-left:auto}
+
+/* ---- section ------------------------------------------------------------ */
+section{padding:28px 0 8px;border-top:1px solid var(--border2)}
+section:first-of-type{border-top:none}
+.section-head{display:flex;align-items:baseline;gap:12px;margin-bottom:4px}
+.section-head h2{font-size:24px;margin:0;font-weight:700}
+.section-head .tag{color:var(--dim);font-size:13px}
+.section-desc{color:var(--muted);margin:2px 0 18px;max-width:820px}
+
+/* ---- paper cards -------------------------------------------------------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px 17px;display:flex;flex-direction:column;gap:9px;transition:.15s;position:relative}
+.card:hover{border-color:#3d6ea5;transform:translateY(-2px);box-shadow:var(--shadow)}
+.card .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.card h3{font-size:15.5px;margin:0;font-weight:650;line-height:1.35}
+.card .yr{color:var(--dim);font-size:12px;font-weight:600;white-space:nowrap;flex:0 0 auto;
+  background:var(--panel2);padding:2px 8px;border-radius:6px}
+.card .authors{color:var(--muted);font-size:12.5px;font-style:italic}
+.card .venue{font-size:12px;color:var(--purple);font-weight:600}
+.card .idea{font-size:13.5px;color:#c9d1d9}
+.card .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.card .links a{font-size:12.5px;background:var(--panel2);border:1px solid var(--border);border-radius:6px;
+  padding:4px 10px;display:inline-flex;align-items:center;gap:5px;color:var(--fg)}
+.card .links a:hover{border-color:var(--accent2);text-decoration:none;color:var(--accent2)}
+.card .links a.gh{color:#c9d1d9}
+.card .tags{display:flex;gap:6px;flex-wrap:wrap}
+.card .t{font-size:11px;background:var(--panel2);border:1px solid var(--border);color:var(--muted);
+  padding:1px 8px;border-radius:10px}
+.card .t.topo{color:var(--green);border-color:#1e4620}
+.card .t.label{color:var(--yellow);border-color:#4a3410}
+.card .t.tf{color:var(--pink);border-color:#4a1730}
+.card.star::after{content:"★ top";position:absolute;top:-8px;right:12px;background:var(--yellow);
+  color:#0d1117;font-size:11px;font-weight:700;padding:1px 8px;border-radius:8px}
+
+/* ---- github live -------------------------------------------------------- */
+.gh-controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.gh-controls select,.gh-controls input{background:var(--panel);border:1px solid var(--border);
+  border-radius:8px;padding:9px 12px;color:var(--fg);font-size:14px}
+.repo{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;
+  display:flex;flex-direction:column;gap:7px}
+.repo:hover{border-color:#3d6ea5}
+.repo .rtop{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.repo .rname{font-size:15px;font-weight:650}
+.repo .stars{color:var(--yellow);font-size:13px;white-space:nowrap;font-weight:600}
+.repo .desc{color:var(--muted);font-size:13px}
+.repo .rmeta{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--dim)}
+.repo .lang{display:inline-flex;align-items:center;gap:5px}
+.repo .lang .cdot{width:10px;height:10px;border-radius:50%}
+.hint{color:var(--dim);font-size:12.5px;margin-top:10px;line-height:1.5}
+.loading,.empty{color:var(--muted);text-align:center;padding:40px 0;font-size:14px}
+.err{color:var(--red);background:#2d1214;border:1px solid #4a1417;border-radius:8px;padding:12px 14px;font-size:13px}
+
+/* ---- timeline / challenge ----------------------------------------------- */
+.tl{list-style:none;padding:0;margin:0;position:relative}
+.tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--border)}
+.tl li{position:relative;padding:0 0 20px 34px}
+.tl li::before{content:"";position:absolute;left:2px;top:5px;width:14px;height:14px;border-radius:50%;
+  background:var(--panel);border:3px solid var(--accent)}
+.tl li.done::before{background:var(--green);border-color:var(--green)}
+.tl li .d{font-size:12px;color:var(--dim);font-weight:600}
+.tl li .e{font-size:14.5px;font-weight:600}
+.tl li .n{font-size:13px;color:var(--muted)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:760px){.two-col{grid-template-columns:1fr}.hero h1{font-size:30px}}
+.info-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px}
+.info-card h3{margin:0 0 10px;font-size:17px;display:flex;align-items:center;gap:8px}
+.info-card ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+.info-card li{margin-bottom:6px}
+.metric{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border2);font-size:14px}
+.metric:last-child{border-bottom:none}
+.metric .k{color:var(--muted)}.metric .v{font-weight:600}
+
+/* ---- footer ------------------------------------------------------------- */
+footer{border-top:1px solid var(--border);margin-top:40px;padding:26px 0 40px;text-align:center;color:var(--dim);font-size:13px}
+footer a{color:var(--muted)}
+.hidden{display:none!important}
+.updated{color:var(--dim);font-size:12px}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:6px}
+::-webkit-scrollbar-track{background:transparent}
+
+/* ---- i18n language toggle (CSS-driven show/hide) ------------------------ */
+.i18.en{display:none}
+body.lang-en .i18.zh{display:none}
+body.lang-en .i18.en{display:inline}
+/* block-level bilingual wrappers */
+.i18b.en{display:none}
+body.lang-en .i18b.zh{display:none}
+body.lang-en .i18b.en{display:block}
+#langBtn{background:var(--panel);border:1px solid var(--border);color:var(--fg);
+  border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;font-weight:600}
+#langBtn:hover{border-color:var(--accent2)}

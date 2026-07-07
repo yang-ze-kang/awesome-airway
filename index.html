@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome Airway · 肺气道分析方法综述</title>
+<meta name="description" content="A curated, general survey & awesome-list of pulmonary airway analysis from chest CT — segmentation, topology/connectivity, anatomical branch labeling, bronchoscopy navigation, datasets & challenges. With live GitHub search for the latest papers & repos.">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://api.github.com">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>Awesome Airway</h1>
+    <p class="sub">
+      <span class="i18 zh">肺气道分析方法精选综述 · 覆盖胸部 CT 气道分割、拓扑连通、解剖分支标注、支气管镜导航、数据集与挑战赛。内置实时 GitHub 检索，随时发现最新论文与仓库。</span>
+      <span class="i18 en">A curated awesome-list for <b>pulmonary airway analysis</b> from chest CT — segmentation, topology &amp; connectivity, anatomical branch labeling, bronchoscopy navigation, datasets &amp; challenges. With live GitHub search for the latest papers &amp; repos.</span>
+    </p>
+    <div class="badges">
+      <span class="badge"><span class="dot"></span> <span class="i18 zh">实时 GitHub 检索</span><span class="i18 en">Live GitHub search</span></span>
+      <span class="badge">📄 <span class="i18 zh">论文</span><span class="i18 en">Papers</span> <b id="badge-papers">–</b></span>
+      <span class="badge">🧩 <span class="i18 zh">方法类别</span><span class="i18 en">Categories</span> <b id="badge-cats">–</b></span>
+      <span class="badge">🔗 <span class="i18 zh">开源仓库</span><span class="i18 en">Repos</span> <b id="badge-repos">–</b></span>
+    </div>
+    <div class="cta">
+      <a class="btn" href="#methods">📚 <span class="i18 zh">浏览方法</span><span class="i18 en">Browse methods</span></a>
+      <a class="btn ghost" href="#live">🔍 <span class="i18 zh">查找最新论文/仓库</span><span class="i18 en">Find latest papers/repos</span></a>
+      <a class="btn ghost" href="#contribute">➕ <span class="i18 zh">贡献</span><span class="i18 en">Contribute</span></a>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="container">
+    <button data-tab="overview" class="active">概览 Overview</button>
+    <button data-tab="methods">方法综述 Methods</button>
+    <button data-tab="live">实时检索 Live GitHub</button>
+    <button data-tab="datasets">数据与工具</button>
+    <button data-tab="challenges">挑战赛 Challenges</button>
+    <button data-tab="contribute">贡献 Contribute</button>
+    <span class="spacer"></span>
+    <button id="langBtn" type="button" title="切换语言 / Switch language">EN</button>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- ============ OVERVIEW ============ -->
+  <div class="tabview" id="tab-overview">
+    <section>
+      <div class="section-head"><h2><span class="i18 zh">什么是肺气道分析</span><span class="i18 en">What is pulmonary airway analysis</span></h2><span class="tag">Pulmonary Airway Analysis</span></div>
+      <p class="section-desc">
+        <span class="i18 zh">气道树是从气管、主/叶/段支气管一路延伸到细支气管的<b>细长、分叉、多尺度管状结构</b>。从胸部 CT 中自动分析气道，是支气管镜导航、经支气管肺结节活检、介入路径规划以及慢阻肺 / 支气管扩张 / 肺纤维化等疾病定量的基础。相比一般器官分割，气道的核心难点在于：类别极度不平衡（远端体素占比极小）、细支气管易断裂、以及对<b>拓扑正确性与连通性</b>的严格要求。</span>
+        <span class="i18 en">The airway tree is a <b>thin, branching, multi-scale tubular structure</b> running from the trachea and lobar/segmental bronchi down to the distal bronchioles. Automatic airway analysis from chest CT underpins bronchoscopy navigation, transbronchial nodule biopsy, interventional path planning, and quantification of COPD / bronchiectasis / pulmonary fibrosis. Compared with ordinary organ segmentation, its core difficulties are extreme class imbalance (distal voxels are a tiny fraction), easily-broken small bronchi, and strict demands on <b>topological correctness and connectivity</b>.</span>
+      </p>
+      <div class="two-col">
+        <div class="info-card">
+          <h3>🧩 <span class="i18 zh">主要任务</span><span class="i18 en">Main tasks</span></h3>
+          <ul class="i18b zh">
+            <li><b>二值气道分割</b>：提取连通的气道掩膜，重点是远端分支保留与拓扑正确。</li>
+            <li><b>拓扑 / 连通性建模</b>：中心线/骨架监督、连通性损失、断裂修复。</li>
+            <li><b>解剖分支标注</b>：为分支分配标准名称（RB1–10 / LB1–10 等）。</li>
+            <li><b>支气管镜导航 / 中心线</b>：路径规划与实时定位。</li>
+          </ul>
+          <ul class="i18b en">
+            <li><b>Binary airway segmentation</b>: extract a connected airway mask, prioritizing distal-branch preservation and topology.</li>
+            <li><b>Topology / connectivity modeling</b>: centerline/skeleton supervision, connectivity losses, break repair.</li>
+            <li><b>Anatomical branch labeling</b>: assign standard names to branches (RB1–10 / LB1–10, etc.).</li>
+            <li><b>Bronchoscopy navigation / centerline</b>: path planning and real-time localization.</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <h3>⚙️ <span class="i18 zh">典型技术脉络</span><span class="i18 en">Typical technical threads</span></h3>
+          <ul class="i18b zh">
+            <li>3D U-Net / nnU-Net 强基线 → 管状敏感损失、类不平衡损失（General Union、clDice）。</li>
+            <li>连通性感知：体素邻域连通、freeze-and-grow、断裂修复网络。</li>
+            <li>结构建模：图/树神经网络、Transformer、隐式表示、Mamba/SSM。</li>
+            <li>标注：沿气道树拓扑传播特征做分支命名。</li>
+          </ul>
+          <ul class="i18b en">
+            <li>Strong 3D U-Net / nnU-Net baselines → tubular-sensitive & class-imbalance losses (General Union, clDice).</li>
+            <li>Connectivity awareness: voxel-neighbourhood connectivity, freeze-and-grow, break-repair networks.</li>
+            <li>Structural modeling: graph/tree neural nets, Transformers, implicit representations, Mamba/SSM.</li>
+            <li>Labeling: propagate features along the airway-tree topology for branch naming.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2><span class="i18 zh">方向速览</span><span class="i18 en">Categories</span></h2><span class="tag"><span class="i18 zh">点击卡片跳转到方法</span><span class="i18 en">Click a card to jump to methods</span></span></div>
+      <div class="grid" id="catOverview"></div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2><span class="i18 zh">评价指标</span><span class="i18 en">Metrics</span></h2></div>
+      <div class="two-col">
+        <div class="info-card">
+          <h3><span class="i18 zh">体素 / 重叠</span><span class="i18 en">Voxel / overlap</span></h3>
+          <div class="metric"><span class="k">Dice (DSC)</span><span class="v"><span class="i18 zh">体素重叠</span><span class="i18 en">Voxel overlap</span></span></div>
+          <div class="metric"><span class="k">IoU</span><span class="v"><span class="i18 zh">交并比</span><span class="i18 en">Intersection over union</span></span></div>
+        </div>
+        <div class="info-card">
+          <h3><span class="i18 zh">拓扑 / 连通（气道核心）</span><span class="i18 en">Topology / connectivity (airway-critical)</span></h3>
+          <div class="metric"><span class="k">Tree Length Detected (TD)</span><span class="v"><span class="i18 zh">检出树长比例</span><span class="i18 en">Detected tree-length ratio</span></span></div>
+          <div class="metric"><span class="k">Branch Detected (BD)</span><span class="v"><span class="i18 zh">检出分支比例</span><span class="i18 en">Detected branch ratio</span></span></div>
+          <div class="metric"><span class="k">clDice</span><span class="v"><span class="i18 zh">中心线 Dice</span><span class="i18 en">Centerline Dice</span></span></div>
+          <div class="metric"><span class="k">Leakage / FPR</span><span class="v"><span class="i18 zh">泄漏 / 假阳</span><span class="i18 en">Leakage / false positive</span></span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ METHODS ============ -->
+  <div class="tabview hidden" id="tab-methods">
+    <div class="toolbar">
+      <input type="search" id="methodSearch" placeholder="搜索标题 / 作者 / 关键词 …">
+      <span class="count" id="methodCount"></span>
+    </div>
+    <div class="toolbar" id="methodFilters" style="margin-top:0"></div>
+    <div id="methodSections"></div>
+  </div>
+
+  <!-- ============ LIVE GITHUB ============ -->
+  <div class="tabview hidden" id="tab-live">
+    <section style="border-top:none">
+      <div class="section-head"><h2><span class="i18 zh">实时 GitHub 检索</span><span class="i18 en">Live GitHub search</span></h2><span class="tag">GitHub REST API</span></div>
+      <p class="section-desc"><span class="i18 zh">直接调用 GitHub 搜索 API，实时拉取气道分析相关的最新开源仓库。无需服务器；可选填入个人 Token 提高速率上限（60→5000 次/小时，仅存于本地浏览器）。</span><span class="i18 en">Calls the GitHub search API directly to fetch the latest airway-related repositories in real time. No backend needed; optionally add a personal token to raise the rate limit (60→5000/hr, stored only in your browser).</span></p>
+      <div class="gh-controls">
+        <select id="ghQuery"></select>
+        <select id="ghSort">
+          <option value="stars">★ Stars</option>
+          <option value="updated" selected>🕒 Updated</option>
+          <option value="">↕ Best match</option>
+        </select>
+        <input type="password" id="ghToken" placeholder="GitHub Token" style="width:210px">
+        <button class="btn" id="ghGo">🔍 <span class="i18 zh">搜索</span><span class="i18 en">Search</span></button>
+      </div>
+      <div id="ghResults"><div class="empty">点击「搜索」拉取最新仓库，或选择上方的预设查询。</div></div>
+      <p class="hint" id="ghHint"></p>
+    </section>
+  </div>
+
+  <!-- ============ DATASETS ============ -->
+  <div class="tabview hidden" id="tab-datasets">
+    <section style="border-top:none">
+      <div class="section-head"><h2>数据集 Datasets</h2></div>
+      <div class="grid" id="datasetGrid"></div>
+    </section>
+    <section>
+      <div class="section-head"><h2>工具与库 Tools & Libraries</h2></div>
+      <div class="grid" id="toolGrid"></div>
+    </section>
+  </div>
+
+  <!-- ============ CHALLENGES ============ -->
+  <div class="tabview hidden" id="tab-challenges">
+    <section style="border-top:none">
+      <div class="section-head"><h2><span class="i18 zh">气道相关挑战赛</span><span class="i18 en">Airway challenges</span></h2></div>
+      <p class="section-desc"><span class="i18 zh">推动气道分析发展的公开挑战赛。ATM 系列（ATM'22 → ATM26）是当前气道树建模的主线基准。</span><span class="i18 en">Public challenges driving airway analysis forward. The ATM series (ATM'22 → ATM26) is the current mainline benchmark for airway tree modeling.</span></p>
+      <div class="grid" id="challengeGrid"></div>
+    </section>
+
+    <section>
+      <div class="section-head"><h2>ATM26 — Airway Tree Modeling 2026</h2><span class="tag">MICCAI 2026</span></div>
+      <p class="section-desc"><span class="i18 zh">ATM26 将气道分析从 ATM'22 的<b>二值分割</b>推进到<b>结构化气道理解</b>：Track 1 二值气道分割（强调拓扑正确性与远端分支），Track 2 分支级解剖标注（RB1–10 / LB1–10 等）。在真实采集条件（不同分辨率、质量、解剖变异）下评估。</span><span class="i18 en">ATM26 advances airway analysis from ATM'22's <b>binary segmentation</b> to <b>structured airway understanding</b>: Track 1 binary airway segmentation (emphasizing topology and distal branches) and Track 2 branch-wise anatomical labeling (RB1–10 / LB1–10, etc.), evaluated under realistic acquisition conditions (varying resolution, quality, anatomy).</span></p>
+      <ul class="tl" id="timeline"></ul>
+    </section>
+
+    <section>
+      <div class="section-head"><h2><span class="i18 zh">ATM26 官方参考文献</span><span class="i18 en">ATM26 required citations</span></h2></div>
+      <p class="section-desc"><span class="i18 zh">使用 ATM26 数据集须引用以下文献，也是理解 ATM 系列方法的起点。</span><span class="i18 en">These must be cited when using the ATM26 dataset, and are the entry point to the ATM line of work.</span></p>
+      <div class="grid" id="official-refs"></div>
+    </section>
+  </div>
+
+  <!-- ============ CONTRIBUTE ============ -->
+  <div class="tabview hidden" id="tab-contribute">
+    <section style="border-top:none" id="contribute">
+      <div class="section-head"><h2><span class="i18 zh">如何贡献</span><span class="i18 en">How to contribute</span></h2></div>
+      <p class="section-desc"><span class="i18 zh">这是一个静态站点，方法数据来自 <code>data.js</code>；实时检索直接走 GitHub API。你可以：</span><span class="i18 en">This is a static site; method data lives in <code>data.js</code> and live search hits the GitHub API directly. You can:</span></p>
+      <div class="info-card">
+        <h3>➕ <span class="i18 zh">添加论文/方法</span><span class="i18 en">Add a paper/method</span></h3>
+        <p style="color:var(--muted)"><span class="i18 zh">编辑 <code>data.js</code> 中的 <code>PAPERS</code> 数组，追加一条：</span><span class="i18 en">Edit the <code>PAPERS</code> array in <code>data.js</code> and append an entry (title/idea/name/desc accept either a plain string or a <code>{zh, en}</code> object for bilingual text):</span></p>
+        <pre style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;overflow:auto;font-size:12.5px"><code>{
+  title: "论文标题",
+  authors: "First et al.",
+  year: 2025,
+  venue: "MICCAI",
+  category: "topology",     // segmentation | topology | labeling | transformer | navigation | dataset
+  idea: "一句话核心思想",
+  arxiv: "2412.11039",       // 或 null
+  doi:   "10.xxxx/xxxx",     // 或 null
+  code:  "https://github.com/...", // 或 null
+  star:  false               // 是否标为该方向代表作
+}</code></pre>
+        <p style="color:var(--muted)"><span class="i18 zh">运行 <code>python update_repos.py</code> 可通过 GitHub API 自动刷新仓库 star 数与最新论文候选，写入 <code>data.generated.json</code>。</span><span class="i18 en">Run <code>python update_repos.py</code> to refresh repo star counts and discover new candidate repos via the GitHub API, written to <code>data.generated.json</code>.</span></p>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p><span class="i18 zh">Awesome Airway · 肺气道分析方法精选综述。数据仅供研究参考，引用请以原文为准。</span><span class="i18 en">Awesome Airway · A curated survey of pulmonary airway analysis. For research reference only; cite the original papers.</span></p>
+    <p class="updated" id="genStamp"></p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
